@@ -12,3 +12,10 @@ This project utilizes HTML, CSS, and JavaScript.  Here is a link to the deployed
 
 Screenshots with the different pop-up window prompts for each component of the password creation, plus the homepage:
 
+![FirstPage](./screenshots/FirstPage.png)
+![LengthConfirm](./screenshots/LengthConfirm.png)
+![NumbersPrompt](./screenshots/NumbersPrompt.png)
+![LowercasePrompt](./screenshots/LowercasePrompt.png)
+![UppercasePrompt](./screenshots/UppercasePrompt.png)
+![SpecialsPrompt](./screenshots/SpecialsPrompt.png)
+![GeneratedPW](./screenshots/GeneratedPW.png)
