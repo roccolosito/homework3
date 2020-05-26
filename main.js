@@ -1,37 +1,6 @@
-// DOM elements
-const generateButton = document.querySelector("#generate");
-
-const randomFunc = {
-  lower: getRandomLower,
-  upper: getRandomUpper,
-  number: getRandomNumber,
-  symbol: getRandomSymbol 
-};
-
-generateButton.addEventListener('click', (writePassword)
-
-// Generator functions
-
-function getRandomLower() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-
-function getRandomUpper() {
-  return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-
-function getRandomNumber() {
-  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-
-function getRandomSymbol() {
-  const symbols = "!@#$%^&*[]().,";
-  return symbols[Math.floor(Math.random() * symbols.length)];
-}
-
 // Special characters for the function created
 const specialCharacters = "!@#$%^&*()";
-const generateButton = document.getElementById("#generate")
+const generateButton = document.querySelector("#generate")
 generateButton.addEventListener('click', writePassword)
 
 // Write password to the #password input
@@ -45,7 +14,7 @@ function writePassword() {
 
 // Prompts that come up after you click generate password
 function generatePassword() {
-  var passwordLength = prompt("Please enter the number of characters you want for you new password.  It must be more than 12 but less than 128.");
+  var passwordLength = prompt("Please enter the number of characters you want for you new password.  It must be more than 8 but less than 128.");
 
   var numbers = confirm("Do you want numbers in your password?");
 
@@ -123,6 +92,7 @@ function generatePassword() {
     randomPasswordGenerated += randomNumberPicked;
 
   }
+
 
   // to make sure characters are added to the password
   randomPasswordGenerated += minimumNumbers;
